@@ -4,8 +4,10 @@ from .models import Patient
 from .serializers import PatientSerializer
 from rest_framework import status
 from django.shortcuts import get_object_or_404
+from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 class PatientManagement(APIView):
+    permission_classes=[IsAuthenticated]
     def get(self,request,id=None):
         if id==None:
             patients=Patient.objects.all()

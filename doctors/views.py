@@ -4,8 +4,10 @@ from .models import Doctor
 from .serializers import DoctorSerializer
 from rest_framework import status
 from django.shortcuts import get_object_or_404
+from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 class DoctorManagement(APIView):
+    permission_classes=[IsAuthenticated]
     def get(self,request,id=None):
         if id==None:
             doctors=Doctor.objects.all()

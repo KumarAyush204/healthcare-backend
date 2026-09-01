@@ -1,0 +1,68 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/patients/
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    date: Tue, 01 Sep 2026 15:11:30 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
+    x-frame-options: DENY
+    content-length: "795"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "id": 8,
+          "name": "Arjun Mehta",
+          "age": 41,
+          "gender": "Male",
+          "country_code": "+91",
+          "phone": "9876543214",
+          "email": "arjun.mehta@test.com",
+          "address": "Bangalore, India",
+          "createdAt": "2026-09-01T15:09:43.401593Z"
+        },
+        {
+          "id": 9,
+          "name": "Neha Gupta",
+          "age": 22,
+          "gender": "Female",
+          "country_code": "+91",
+          "phone": "9876543213",
+          "email": "neha.gupta@test.com",
+          "address": "Panchkula, Haryana",
+          "createdAt": "2026-09-01T15:11:09.760621Z"
+        },
+        {
+          "id": 10,
+          "name": "Amit Verma",
+          "age": 34,
+          "gender": "Male",
+          "country_code": "+91",
+          "phone": "9876543212",
+          "email": "amit.verma@test.com",
+          "address": "Delhi, India",
+          "createdAt": "2026-09-01T15:11:15.222321Z"
+        },
+        {
+          "id": 11,
+          "name": "Priya Singh",
+          "age": 29,
+          "gender": "Female",
+          "country_code": "+91",
+          "phone": "9876543211",
+          "email": "priya.singh@test.com",
+          "address": "Mohali, Punjab",
+          "createdAt": "2026-09-01T15:11:20.423254Z"
+        }
+      ]
+order: 3596751257673406

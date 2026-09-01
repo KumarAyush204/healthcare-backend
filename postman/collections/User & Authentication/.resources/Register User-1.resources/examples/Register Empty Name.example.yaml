@@ -1,0 +1,30 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/register/
+  method: POST
+  body:
+    type: json
+    content: '{"name":"","email":"ayush4@test.com","password":"Test@123"}'
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    date: Tue, 01 Sep 2026 14:14:45 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: POST, OPTIONS
+    x-frame-options: DENY
+    content-length: "41"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      {
+        "name": [
+          "This field may not be blank."
+        ]
+      }
+order: 299423564617832

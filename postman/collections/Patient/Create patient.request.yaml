@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/patients/
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Arjun Mehta\",\r
+
+    \  \"age\": 41,\r
+
+    \  \"gender\": \"Male\",\r
+
+    \  \"country_code\": \"+91\",\r
+
+    \  \"phone\": \"9876543214\",\r
+
+    \  \"email\": \"arjun.mehta@test.com\",\r
+
+    \  \"address\": \"Bangalore, India\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg4MjczNjg1LCJpYXQiOjE3ODgyNzMzODUsImp0aSI6ImUzNGE2ODAzZTNjMTQyNzViY2EwNTVlZGE0OWQzM2U4IiwidXNlcl9pZCI6IjMifQ.0z17iRE5stsSRwQFWgH1JG40actSEgru9aSGHyeKlQQ
+examples: .resources/Create patient.resources/examples
+order: 1788273339716

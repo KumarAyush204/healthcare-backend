@@ -1,0 +1,5 @@
+$kind: http-request
+url: Partially update patient
+method: PATCH
+examples: .resources/Partially update patient.resources/examples
+order: 3974859238735794

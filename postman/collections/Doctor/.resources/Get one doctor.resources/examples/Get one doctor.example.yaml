@@ -1,0 +1,31 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/doctors/3/
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    date: Tue, 01 Sep 2026 14:58:57 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
+    x-frame-options: DENY
+    content-length: "184"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      {
+        "id": 3,
+        "name": "Dr. Rajesh Kumar",
+        "specialization": "Cardiologist",
+        "country_code": "+91",
+        "phone": "9876500001",
+        "email": "rajesh.kumar@doctor.com",
+        "createdAt": "2026-09-01T14:56:53.343973Z"
+      }
+order: 223077119351397

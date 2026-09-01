@@ -1,0 +1,52 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/patients/
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \  \"name\": \"Rahul Sharma\",\r
+
+      \  \"age\": 25,\r
+
+      \  \"gender\": \"Male\",\r
+
+      \  \"country_code\": \"+91\",\r
+
+      \  \"phone\": \"9876543210\",\r
+
+      \  \"email\": \"rahul.sharma@test.com\",\r
+
+      \  \"address\": \"Chandigarh, India\"\r
+
+      }"
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    date: Tue, 01 Sep 2026 14:37:41 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
+    x-frame-options: DENY
+    content-length: "201"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      {
+        "id": 3,
+        "name": "Rahul Sharma",
+        "age": 25,
+        "gender": "Male",
+        "country_code": "+91",
+        "phone": "9876543210",
+        "email": "rahul.sharma@test.com",
+        "address": "Chandigarh, India",
+        "createdAt": "2026-09-01T14:37:41.489913Z"
+      }
+order: 1788273472972

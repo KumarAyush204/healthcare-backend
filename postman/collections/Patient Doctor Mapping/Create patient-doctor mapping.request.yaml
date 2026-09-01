@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/patient-doctor-mapping/
+method: POST
+body:
+  type: json
+  content: '{"patient":10,"doctor":6}'
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg4Mjc1ODYwLCJpYXQiOjE3ODgyNzU1NjAsImp0aSI6IjMwZTM1YTQwMjBiYjRlMzhhYTkzMmZkODYzZGI3YTFkIiwidXNlcl9pZCI6IjMifQ.Xe3G0tsBpxBuMDqBzomaF2YsZDybbdi52rRfPJi7rKA
+examples: .resources/Create patient-doctor mapping.resources/examples
+order: 3314747451326279

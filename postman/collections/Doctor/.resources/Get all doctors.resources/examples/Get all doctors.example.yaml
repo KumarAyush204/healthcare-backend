@@ -1,0 +1,69 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/doctors/
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    date: Tue, 01 Sep 2026 14:57:52 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
+    x-frame-options: DENY
+    content-length: "918"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "id": 3,
+          "name": "Dr. Rajesh Kumar",
+          "specialization": "Cardiologist",
+          "country_code": "+91",
+          "phone": "9876500001",
+          "email": "rajesh.kumar@doctor.com",
+          "createdAt": "2026-09-01T14:56:53.343973Z"
+        },
+        {
+          "id": 4,
+          "name": "Dr. Amit Verma",
+          "specialization": "Orthopedic",
+          "country_code": "+91",
+          "phone": "9876500005",
+          "email": "amit.verma@doctor.com",
+          "createdAt": "2026-09-01T14:57:30.129812Z"
+        },
+        {
+          "id": 5,
+          "name": "Dr. Neha Gupta",
+          "specialization": "Pediatrician",
+          "country_code": "+91",
+          "phone": "9876500004",
+          "email": "neha.gupta@doctor.com",
+          "createdAt": "2026-09-01T14:57:35.325056Z"
+        },
+        {
+          "id": 6,
+          "name": "Dr. Vikram Singh",
+          "specialization": "Neurologist",
+          "country_code": "+91",
+          "phone": "9876500003",
+          "email": "vikram.singh@doctor.com",
+          "createdAt": "2026-09-01T14:57:41.279240Z"
+        },
+        {
+          "id": 7,
+          "name": "Dr. Anjali Sharma",
+          "specialization": "Dermatologist",
+          "country_code": "+91",
+          "phone": "9876500002",
+          "email": "anjali.sharma@doctor.com",
+          "createdAt": "2026-09-01T14:57:45.675569Z"
+        }
+      ]
+order: 670722835370211

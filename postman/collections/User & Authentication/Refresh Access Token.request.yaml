@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/token/refresh/
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc4ODM1ODU5NiwiaWF0IjoxNzg4MjcyMTk2LCJqdGkiOiI1MTJiZDlmNzNiZTk0ZmE2OWFmNDZkZmE1YjAzOGZmOCIsInVzZXJfaWQiOiIzIn0.v8v97ksjjzjd9pCuzci3e_2iGsMuSIYicQIsLFArFVY\"\r
+
+    }"
+examples: .resources/Refresh Access Token.resources/examples
+order: 4156373244053866

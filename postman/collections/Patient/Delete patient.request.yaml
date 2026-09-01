@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/patients/1/
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg4Mjc0NDAwLCJpYXQiOjE3ODgyNzQxMDAsImp0aSI6ImUyZDliZWQ1YzJlYzQ5NzU4ZGVhNjdjZDhjN2M4OWY2IiwidXNlcl9pZCI6IjMifQ.VFsvFUWYQ-TcoL7UHEEfazOXG43IHnedCyqNdA3uTMI
+examples: .resources/Delete patient.resources/examples
+order: 4499280988503455

@@ -1,0 +1,32 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/token/refresh/
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \  \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc4ODM1ODU5NiwiaWF0IjoxNzg4MjcyMTk2LCJqdGkiOiI1MTJiZDlmNzNiZTk0ZmE2OWFmNDZkZmE1YjAzOGZmOCIsInVzZXJfaWQiOiIzIn0.v8v97ksjjzjd9pCuzci3e_2iGsMuSIYicQIsLFArFVY\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    date: Tue, 01 Sep 2026 14:19:58 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: POST, OPTIONS
+    x-frame-options: DENY
+    content-length: "244"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      {
+        "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg4MjcyNjk4LCJpYXQiOjE3ODgyNzIzOTgsImp0aSI6ImRjZWU3MjhlMjdlNjRlOTFhODZjOTgyMmI3YmQyMDJhIiwidXNlcl9pZCI6IjMifQ.oMdLWh3nMcttqO99PfUfFFqo719Ve8znkoBESo57gBs"
+      }
+order: 1788272402968

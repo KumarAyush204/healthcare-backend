@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/doctors/
+method: POST
+body:
+  type: json
+  content: '{"name":"Dr. Rajesh Kumar","specialization":"Cardiologist","country_code":"+91","phone":"9876500001","email":"rajesh.kumar@doctor.com"}'
+examples: .resources/Create doctor.resources/examples
+order: 1788274291861

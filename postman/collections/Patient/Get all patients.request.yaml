@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/patients/
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg4Mjc1NDkyLCJpYXQiOjE3ODgyNzUxOTIsImp0aSI6IjE4OTcyYWVmNWVlYTQ0NmJhZjY1ZTJhNzcyOTI4ZjllIiwidXNlcl9pZCI6IjMifQ.nrqedDOztA27v44us5gxrWF7bBnkg_COF3erDjnO29g
+examples: .resources/Get all patients.resources/examples
+order: 2113690236341140

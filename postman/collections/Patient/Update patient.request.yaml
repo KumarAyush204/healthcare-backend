@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/patients/3/
+method: PUT
+body:
+  type: json
+  content: '{"name":"Rahul Kumar","age":26,"gender":"Male","country_code":"+91","phone":"9876543211","email":"rahul.updated@test.com","address":"Mohali, Punjab"}'
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg4Mjc0MTA5LCJpYXQiOjE3ODgyNzM4MDksImp0aSI6Ijc0M2U2YjA4YTE1ZTQzMDZiMzM3ZWJhZWZlYTIxMmM0IiwidXNlcl9pZCI6IjMifQ.EwMZ8kVx57JIYLZPTbjb3AVy3M3o88qvyRPF2k7zGts
+examples: .resources/Update patient.resources/examples
+order: 2610416864769415

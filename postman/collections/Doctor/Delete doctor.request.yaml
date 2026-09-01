@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/doctors/1/
+method: DELETE
+auth:
+  type: bearer
+examples: .resources/Delete doctor.resources/examples
+order: 4326245900234021

@@ -1,0 +1,25 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/patients/1/
+  method: GET
+response:
+  statusCode: 404
+  statusText: Not Found
+  headers:
+    date: Tue, 01 Sep 2026 14:41:27 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
+    x-frame-options: DENY
+    content-length: "48"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      {
+        "detail": "No Patient matches the given query."
+      }
+order: 1788273703260

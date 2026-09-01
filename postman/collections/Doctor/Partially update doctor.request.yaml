@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/doctors/3/
+method: PATCH
+body:
+  type: json
+  content: '{"specialization":"Cardiac Surgeon"}'
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg4Mjc1MDg4LCJpYXQiOjE3ODgyNzQ3ODgsImp0aSI6ImZjZTE3OTEzZTE1OTRjMmQ4ZDA0ZTkxOGRiZjllZWJhIiwidXNlcl9pZCI6IjMifQ.xKz4b_keWgdLFhledjnzHDQ7_oihxxc9MI44x-YA-OA
+examples: .resources/Partially update doctor.resources/examples
+order: 4501868303100592

@@ -1,0 +1,5 @@
+$kind: http-request
+url: ""
+method: GET
+examples: .resources/Get all doctors.resources/examples
+order: 4300863188341726

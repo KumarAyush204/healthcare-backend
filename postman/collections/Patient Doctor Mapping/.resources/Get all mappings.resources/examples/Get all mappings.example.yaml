@@ -1,0 +1,42 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/patient-doctor-mapping/
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    date: Tue, 01 Sep 2026 15:14:42 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: GET, POST, DELETE, HEAD, OPTIONS
+    x-frame-options: DENY
+    content-length: "226"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "id": 2,
+          "patient": 11,
+          "doctor": 5,
+          "createdAt": "2026-09-01T15:13:44.462683Z"
+        },
+        {
+          "id": 3,
+          "patient": 11,
+          "doctor": 6,
+          "createdAt": "2026-09-01T15:14:01.344831Z"
+        },
+        {
+          "id": 4,
+          "patient": 10,
+          "doctor": 6,
+          "createdAt": "2026-09-01T15:14:08.856139Z"
+        }
+      ]
+order: 1670513059415593

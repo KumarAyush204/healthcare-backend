@@ -1,0 +1,31 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/patient-doctor-mapping/
+  method: POST
+  body:
+    type: json
+    content: '{"patient":11,"doctor":5}'
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    date: Tue, 01 Sep 2026 15:13:44 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: GET, POST, DELETE, HEAD, OPTIONS
+    x-frame-options: DENY
+    content-length: "74"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      {
+        "id": 2,
+        "patient": 11,
+        "doctor": 5,
+        "createdAt": "2026-09-01T15:13:44.462683Z"
+      }
+order: 2261758845644637

@@ -1,0 +1,29 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/api/login/
+  method: POST
+  body:
+    type: json
+    content: '{"email":"ayush1@test.com","password":"Test@123"}'
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    date: Tue, 01 Sep 2026 14:16:36 GMT
+    server: WSGIServer/0.2 CPython/3.13.14
+    content-type: application/json
+    vary: Accept
+    allow: POST, OPTIONS
+    x-frame-options: DENY
+    content-length: "489"
+    x-content-type-options: nosniff
+    referrer-policy: same-origin
+    cross-origin-opener-policy: same-origin
+  body:
+    type: json
+    content: |-
+      {
+        "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc4ODM1ODU5NiwiaWF0IjoxNzg4MjcyMTk2LCJqdGkiOiI1MTJiZDlmNzNiZTk0ZmE2OWFmNDZkZmE1YjAzOGZmOCIsInVzZXJfaWQiOiIzIn0.v8v97ksjjzjd9pCuzci3e_2iGsMuSIYicQIsLFArFVY",
+        "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg4MjcyNDk2LCJpYXQiOjE3ODgyNzIxOTYsImp0aSI6ImJiM2MyNjcwNzFmOTQxMGY5NTc3MjgxMmQ5ZWY2MTYxIiwidXNlcl9pZCI6IjMifQ.8im0-5jRK1XbeM7z7EWL2I41VSok_uWpL78mz6OphgI"
+      }
+order: 1788272199243

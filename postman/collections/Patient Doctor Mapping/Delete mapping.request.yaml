@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/patient-doctor-mapping/2/
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg4Mjc2MDk2LCJpYXQiOjE3ODgyNzU3OTYsImp0aSI6IjQ1NWZhYzliNjY4MTRmN2FhMWNiYWFhZTY5MjIxZTA0IiwidXNlcl9pZCI6IjMifQ.7RKvNQWbapTzfG9E_Hb1SgeVpwLLxaiiJMW3F2e68m8
+examples: .resources/Delete mapping.resources/examples
+order: 4149692998447279

@@ -2,7 +2,7 @@ from rest_framework.views import APIView,Response
 from .models import PatientDoctorMap
 from patients.models import Patient
 from doctors.models import Doctor
-from .serializers import PatientDoctorMappingSerialize
+from .serializers import PatientDoctorMappingSerializer
 from doctors.serializers import DoctorSerializer
 from rest_framework import status
 from django.shortcuts import get_object_or_404
@@ -13,11 +13,11 @@ class PatientDoctorMappingView(APIView):
     permission_classes=[IsAuthenticated]
     def get(self,request):
         patientdoctor=PatientDoctorMap.objects.all()
-        patientdoctorData=PatientDoctorMappingSerialize(patientdoctor,many=True)
+        patientdoctorData=PatientDoctorMappingSerializer(patientdoctor,many=True)
         return Response(patientdoctorData.data,status=status.HTTP_200_OK)
 
     def post(self,request):
-        patientdoctorData=PatientDoctorMappingSerialize(data=request.data)
+        patientdoctorData=PatientDoctorMappingSerializer(data=request.data)
         if patientdoctorData.is_valid():
             patientdoctorData.save()
             return Response(patientdoctorData.data,status=status.HTTP_201_CREATED)

@@ -2,10 +2,10 @@ from django.urls import path
 from .views import PatientDoctorMappingView, PatientDoctorView
 
 urlpatterns = [
-    path("patient-doctor-mapping/", PatientDoctorMappingView.as_view()),
-    path("patient-doctor-mapping/<int:id>/",PatientDoctorMappingView.as_view()),
+    path("mappings/", PatientDoctorMappingView.as_view()),
+    path("mappings/<int:id>/",PatientDoctorMappingView.as_view()),
     path(
-        "patient/<int:patient_id>/doctors/",
+        "mappings/<int:patient_id>",
         PatientDoctorView.as_view()
     ),
-]
+]  

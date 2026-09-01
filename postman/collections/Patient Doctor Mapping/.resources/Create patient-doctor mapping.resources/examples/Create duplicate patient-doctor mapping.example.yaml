@@ -1,21 +1,21 @@
 $kind: http-example
 request:
-  url: http://127.0.0.1:8000/api/patient-doctor-mapping/
+  url: http://127.0.0.1:8000/api/mappings/
   method: POST
   body:
     type: json
-    content: '{"patient":11,"doctor":1}'
+    content: '{"patient":10,"doctor":6}'
 response:
   statusCode: 400
   statusText: Bad Request
   headers:
-    date: Tue, 01 Sep 2026 15:13:18 GMT
+    date: Tue, 01 Sep 2026 17:09:59 GMT
     server: WSGIServer/0.2 CPython/3.13.14
     content-type: application/json
     vary: Accept
     allow: GET, POST, DELETE, HEAD, OPTIONS
     x-frame-options: DENY
-    content-length: "56"
+    content-length: "75"
     x-content-type-options: nosniff
     referrer-policy: same-origin
     cross-origin-opener-policy: same-origin
@@ -23,8 +23,8 @@ response:
     type: json
     content: |-
       {
-        "doctor": [
-          "Invalid pk \"1\" - object does not exist."
+        "non_field_errors": [
+          "The fields patient, doctor must make a unique set."
         ]
       }
-order: 345962779958676
+order: 1788282607952

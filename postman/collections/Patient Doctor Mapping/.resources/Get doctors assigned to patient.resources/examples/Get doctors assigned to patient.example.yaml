@@ -1,33 +1,22 @@
 $kind: http-example
 request:
-  url: http://127.0.0.1:8000/api/patient/10/doctors/
+  url: http://127.0.0.1:8000/api/mappings/11
   method: GET
 response:
   statusCode: 200
   statusText: OK
   headers:
-    date: Tue, 01 Sep 2026 15:15:35 GMT
+    date: Tue, 01 Sep 2026 17:09:22 GMT
     server: WSGIServer/0.2 CPython/3.13.14
     content-type: application/json
     vary: Accept
     allow: GET, HEAD, OPTIONS
     x-frame-options: DENY
-    content-length: "185"
+    content-length: "2"
     x-content-type-options: nosniff
     referrer-policy: same-origin
     cross-origin-opener-policy: same-origin
   body:
     type: json
-    content: |-
-      [
-        {
-          "id": 6,
-          "name": "Dr. Vikram Singh",
-          "specialization": "Neurologist",
-          "country_code": "+91",
-          "phone": "9876500003",
-          "email": "vikram.singh@doctor.com",
-          "createdAt": "2026-09-01T14:57:41.279240Z"
-        }
-      ]
-order: 1788275736692
+    content: "[]"
+order: 1788282564210

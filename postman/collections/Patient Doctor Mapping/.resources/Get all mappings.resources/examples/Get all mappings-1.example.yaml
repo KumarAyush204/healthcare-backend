@@ -1,12 +1,13 @@
 $kind: http-example
+name: Get all mappings
 request:
-  url: http://127.0.0.1:8000/api/patient-doctor-mapping/
+  url: http://127.0.0.1:8000/api/mappings/
   method: GET
 response:
   statusCode: 200
   statusText: OK
   headers:
-    date: Tue, 01 Sep 2026 15:04:25 GMT
+    date: Tue, 01 Sep 2026 17:11:20 GMT
     server: WSGIServer/0.2 CPython/3.13.14
     content-type: application/json
     vary: Accept
@@ -19,4 +20,4 @@ response:
   body:
     type: json
     content: "[]"
-order: 1788275066942
+order: 3285830254149016

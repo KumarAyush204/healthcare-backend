@@ -1,15 +1,15 @@
 $kind: http-example
 request:
-  url: http://127.0.0.1:8000/api/patient-doctor-mapping/
+  url: http://127.0.0.1:8000/api/mappings/
   method: POST
   body:
     type: json
-    content: '{"patient":11,"doctor":5}'
+    content: '{"patient":10,"doctor":7}'
 response:
   statusCode: 201
   statusText: Created
   headers:
-    date: Tue, 01 Sep 2026 15:13:44 GMT
+    date: Tue, 01 Sep 2026 17:10:35 GMT
     server: WSGIServer/0.2 CPython/3.13.14
     content-type: application/json
     vary: Accept
@@ -23,9 +23,9 @@ response:
     type: json
     content: |-
       {
-        "id": 2,
-        "patient": 11,
-        "doctor": 5,
-        "createdAt": "2026-09-01T15:13:44.462683Z"
+        "id": 5,
+        "patient": 10,
+        "doctor": 7,
+        "createdAt": "2026-09-01T17:10:35.326428Z"
       }
-order: 2261758845644637
+order: 1340456909673165

@@ -1,12 +1,12 @@
 $kind: http-example
 request:
-  url: http://127.0.0.1:8000/api/patient-doctor-mapping/1/
+  url: http://127.0.0.1:8000/api/mappings/2/
   method: DELETE
 response:
   statusCode: 404
   statusText: Not Found
   headers:
-    date: Tue, 01 Sep 2026 15:16:42 GMT
+    date: Tue, 01 Sep 2026 17:08:53 GMT
     server: WSGIServer/0.2 CPython/3.13.14
     content-type: application/json
     vary: Accept
@@ -22,4 +22,4 @@ response:
       {
         "detail": "No PatientDoctorMap matches the given query."
       }
-order: 1788275804639
+order: 1788282535686

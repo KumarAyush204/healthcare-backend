@@ -1,12 +1,12 @@
 $kind: http-example
 request:
-  url: http://127.0.0.1:8000/api/patient-doctor-mapping/2/
+  url: http://127.0.0.1:8000/api/mappings/3/
   method: DELETE
 response:
   statusCode: 204
   statusText: No Content
   headers:
-    date: Tue, 01 Sep 2026 15:17:04 GMT
+    date: Tue, 01 Sep 2026 17:09:09 GMT
     server: WSGIServer/0.2 CPython/3.13.14
     vary: Accept
     allow: GET, POST, DELETE, HEAD, OPTIONS
@@ -18,4 +18,4 @@ response:
   body:
     type: text
     content: ""
-order: 4185464337601974
+order: 937741744494493
